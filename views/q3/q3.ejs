@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Login - E-Commerce</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      .box {
+        padding: 20px;
+      }
+      h2 {
+        margin-top: 0;
+        color: #0073aa;
+      }
+      .form-group {
+        margin-bottom: 14px;
+      }
+      .form-group label {
+        display: block;
+        margin-bottom: 6px;
+        color: #333;
+      }
+      .form-group input {
+        width: 100%;
+        padding: 9px 10px;
+        border: 1px solid #b7c2cc;
+        border-radius: 4px;
+        font-size: 14px;
+      }
+      button {
+        padding: 10px;
+        background-color: #0073aa;
+        border: none;
+        color: #fff;
+        font-size: 15px;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: #005f8c;
+      }
+      label {
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <form action="/q3" method="post">
+        <div class="form-group">
+          <label for="username">Email</label>
+          <input type="text" id="username" name="email" required />
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" required />
+        </div>
+        <input type="checkbox" name="remember" /> Remember my email<br/>
+        <button type="submit" style="margin-right: 8px; margin-top: 10px">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Login - E-Commerce</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      .box {
+        padding: 20px;
+      }
+      input{
+        width: 180px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <h2>We have sent a secret code to your email.<br />
+      Please check your email and insert the code in the following input field:</h2>
+      <form action="/otpsent" method="post">
+        <strong>Two Factor Authentication Code: </strong>
+        <input type="text" name="otp" placeholder="Enter Secret Code Here" required>
+        <button type="submit" style="margin-right: 8px; margin-top: 10px">Verify Code</button>
+      </form>
+    </div>
+  </body>
+</html>
